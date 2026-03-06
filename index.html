@@ -1,60 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fourth Wing</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
 <body>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fourth Wing</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js" defer></script>
-  </head>
-  <main>
-    <div class="superior">
-      <h1>Fourth Wing</h1>
-    </div>
-    <div class="inferior">
-      <div class="card">
-        <img src="assets/foto1.jpeg" alt="" onclick="mostraModal(0)" />
-        <h2>Violet</h2>
-      </div>
-      <div class="card">
-        <img src="assets/foto2.jpeg" alt="" onclick="mostraModal(1)" />
-        <h2>Xaden</h2>
-      </div>
-      <div class="card">
-        <img src="assets/foto3.jpeg" alt="" onclick="mostraModal(2)" />
-        <h2>Templo Dunne</h2>
-      </div>
-      <div class="card">
-        <img src="assets/foto4.jpeg" alt="" onclick="mostraModal(3)" />
-        <h2>Esquadrão</h2>
-      </div>
-      <div class="card">
-        <img src="assets/foto5.jpeg" alt="" onclick="mostraModal(4)" />
-        <h2>Dragões</h2>
-      </div>
-      <div class="card">
-        <img src="assets/foto6.jpeg" alt="" onclick="mostraModal(5)" />
-        <h2>Venin</h2>
-      </div>
-    </div>
-  </main>
-  <div class="modal" id="modal">
-    <div class="modalContent">
-      <div class="modalFoto">
-        <img src="assets/foto1.jpeg" alt="" id="foto" />
-      </div>
-      <div class="modalTexto">
-        <h1 id="nome"></h1>
-        <p id="desc">Violet Sorrengail é a heroína de Quarta Asa, uma garota frágil que precisa sobreviver em uma
-          academia de
-          guerreiros e dragões, usando sua inteligência e coragem.</p>
-      </div>
-      <div class="close" onclick="fechaModal()">&times;</div>
-    </div>
-  </div>
-</body>
+<main>
 
+<div class="superior">
+<h1>Fourth Wing</h1>
+</div>
+
+<div class="inferior">
+
+<div class="card">
+<img src="assets/foto1.jpeg" onclick="mostraModal(0)">
+<h2>Violet</h2>
+</div>
+
+<div class="card">
+<img src="assets/foto2.jpeg" onclick="mostraModal(1)">
+<h2>Xaden</h2>
+</div>
+
+<div class="card">
+<img src="assets/foto3.jpeg" onclick="mostraModal(2)">
+<h2>Templo Dunne</h2>
+</div>
+
+<div class="card">
+<img src="assets/foto4.jpeg" onclick="mostraModal(3)">
+<h2>Esquadrão</h2>
+</div>
+
+<div class="card">
+<img src="assets/foto5.jpeg" onclick="mostraModal(4)">
+<h2>Dragões</h2>
+</div>
+
+<div class="card">
+<img src="assets/foto6.jpeg" onclick="mostraModal(5)">
+<h2>Venin</h2>
+</div>
+
+</div>
+
+</main>
+
+<div class="modal" id="modal">
+
+<div class="modalContent">
+
+<div class="modalFoto">
+<img id="foto">
+</div>
+
+<div class="modalTexto">
+<h1 id="nome"></h1>
+<p id="desc"></p>
+</div>
+
+<div class="close" onclick="fechaModal()">×</div>
+
+</div>
+
+</div>
+
+</body>
 </html>
